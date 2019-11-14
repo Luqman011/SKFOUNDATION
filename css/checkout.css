@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto|Ubuntu&display=swap');
+
+body, html{
+    padding: 8px;
+    margin: 0%;
+    font-family: 'Lato';
+    scroll-behavior: smooth;
+    font-size: 17px;
+
+}
+
+.navbar-brand{
+    font-family: 'Pacifico';
+    font-size: 35px;
+    color: lightcoral !important; 
+}
+.nav-link{
+    font-size: 16px;
+    margin: 15px;
+    color: black !important;
+    font-family: 'Roboto';
+}
+.nav-link:hover{
+    color: darkorange !important;
+}
+.active .nav-link{
+    color: darkorange !important;
+}
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+
+}
+.menu-right-btn:hover{
+    color: white;
+    background-color: darkorange;
+}
+
+/*CHECKOUT CSS*/
+
+*{
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    
+}
+.parent{
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 60px;
+
+
+   
+}
+.child{
+    width: 80px;
+    height: 50px;
+    float: left;
+    margin-left: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 10px;
+    cursor: pointer;
+    padding-top: 15px;
+  
+}
+.bak{
+    background: #ACDF87;
+    color: #000;
+    font-weight: bold;
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.col-25{
+    -ms-flex: 25%;
+    flex: 25%;
+}
+.col-50{
+    -ms-flex: 50%;
+    flex: 50%;
+}
+.col-75{
+    -ms-flex: 75%;
+    flex: 75%;
+
+}
+.col-25, .col-50, .col-75{
+    padding: 0 16px;
+}
+.container{
+    display: flex;
+    background-color: #cccccc;
+    padding: 3px 18px 13px 18px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    
+}
+input[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+input[type=checkbox]{
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+label{
+  margin-bottom: 10px;
+  display: block;  
+}
+.icon-container{
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+.btn1{
+    background-color: #990000;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn1:hover{
+    background-color: darkorange; 
+}
+/*END OF CHECKOUT CSS*/
+
+.social i{
+    color: darkorange;
+    font-size: 20px;
+}
+@media screen and(max-width: 320px){
+    footer input[type="button"]{
+        margin-top: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

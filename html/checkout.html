@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>SKF | Get Involved</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand ml-3">SK<span style="color:darkorange">Foundation</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" 
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"></div>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="../index.html" rel="#about" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="../html/team.html" class="nav-link">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="../html/story.html" class="nav-link">Stories</a>
+
+                    </li>
+                    <li class="nav-item">
+                            <a href="../html/bio.html" class="nav-link">BIO</a>
+                    </li>
+                            <a href="#footer" class="nav-link">Contact us</a>
+                    </li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<h2> GET INVOLVED</h2>
+<p style="margin-left: 80px; font-size: 29px; color: darkorange;"> Please select the amount you wish to donate</p>
+<div class="parent">
+        <div class="child bak">50$</div>
+        <div class="child">100$</div>
+    </div>
+    <script>
+        var elements = document.getElementsByClassName("child");
+        for(var i = 0; i < elements.length; i++)
+        {
+            elements[i].onclick = function() {
+    
+                // remove class from sibling
+    
+                var el = elements[0];
+                while(el)
+                {
+                    if(el.tagName === "DIV"){
+                        el.classList.remove("bak");
+                    }
+                    // pass to new sibling
+                    
+                    el = el.nextSibling;
+                } 
+                this.classList.add("bak");
+            };
+        }
+    
+    
+    </script>
+    
+
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-58">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fas fa-user"></i>Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Shifra Kirabo">
+
+                        <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                        <input type="text" id="email" name="email" placeholder="Shifra@example.com">
+
+                        <label for="fname"><i class="fas fa-map-marker-alt"></i>Address</label>
+                        <input type="text" id="address" name="firstname" placeholder="452 W. 15th Street">
+
+                        <label for="city"><i class="fas fa-university"></i>City</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Washington D.C">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="pp">
+                            </div>
+                            <div class="col-50">
+                                <label for="state">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Card</label>
+                        <div class="icon-container">
+                            <i class="fab fa-cc-visa" style="color: navy;"></i>
+                            <i class="fab fa-cc-amex" style="color:blue;"></i>
+                            <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fab fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardnumber" placeholder="Shifra Kirabo">
+
+                        <label for="cnumber">Credit Card</label>
+                        <input type="text" id="cnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="september">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2019">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="samedr">Make it a monthly payment</label>
+                        <input type="submit" value="confirm Payment" class="btn1">
+                    </div>
+
+            </div>
+            
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="section-5 text-center">
+            <h4 style="margin-top:5%;">SHIFRA KIRABO FOUNDATION</h4>
+            <h4 class="my-4">If you need any help</h4>
+
+            <div class="form-inline justify-content-center">
+                <input type="text" name="Email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
+                <input type="button" value="contact Us" class="btn btn-danger px-4 py-2">
+            </div>
+
+            <div class="social" style="margin:5%;">
+                <div class="d-flex flex-row justify-content-center">
+                    <i class="fab fa-facebook-f m-2"></i>
+                    <a href="https://twitter.com/ShifraKirabo"><i class="fab fa-twitter m-2"></i></a>
+                    <a href="https://www.instagram.com/shifrakirabofoundation/"><i class="fab fa-instagram m-2"></i></a>
+                    <i class="fab fa-youtube m-2"></i>
+                </div>
+            </div>
+            <hr>
+            <h5 style="color:darkorange;">SKFoundation &copy;</h5>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
