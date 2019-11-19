@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto|Ubuntu&display=swap');
+
+
 body, html{
     padding: 0%;
     margin: 0%;
+    min-height: 100vh; 
     font-family: 'Lato';
     scroll-behavior: smooth;
 
@@ -59,25 +63,20 @@ body, html{
     background-color: darkorange;
     color: white;
 }
-.site-btn2{
-    background-color: #fff;
-
+.main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Ubuntu';
 }
-.site-btn1, .site-btn2{
-    margin-top: 5%;
-    margin-bottom: 20%;
-}
-.link1{
-    height: 200px;
-    margin-left: 80px;
-    margin-top: 20px;
-    
-}
-.para1 p{
-    margin-top: 100px;
-}
+.para1{
+    padding: 5vw;
+}   
 .para1 h1{
-    text-align: center;
-    display: inline;
-    float: right;
+    margin: 0;
+    padding: 0;
+    font-size:6vw;
 }
