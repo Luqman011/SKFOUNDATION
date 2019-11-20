@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto|Ubuntu&display=swap');
 
-*{
-    box-sizing: border-box;
-}
+
 body, html{
     padding: 0%;
     margin: 0%;
+    min-height: 100vh; 
     font-family: 'Lato';
     scroll-behavior: smooth;
 
@@ -38,6 +37,54 @@ body, html{
     color: white;
     background-color: darkorange;
 }
+/*DROPDOWN*/
+
+
+ul{ 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.links li{
+    background-color: #eee;
+    height: 40px;
+    text-align: center;
+    display: none;
+}
+.links li:hover{
+    background-color: darkorange;
+}
+.links li a{
+    text-decoration: none;
+    color: #000;
+}
+ul li:hover ul li{
+    display: block;
+}
+
+.site-content{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/A.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 570px;
+
+}
+.site-title, .site-desc{
+    color: #fff;
+    font-family: 'Righteous';
+
+}
+.site-title{
+    margin-top: 20%;
+    margin-bottom: 6%;
+    font-size: 60px;
+    text-align: center;
+}
+.site-desc{
+    font-size: 14px;
+    padding-left: 15%;
+
+}
 .column{
     width: 25%;
     float: left;
@@ -46,6 +93,7 @@ body, html{
 .row{
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 20px;
 }
 .row:after{
     content:"";
@@ -61,14 +109,15 @@ body, html{
     }
 }
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     max-width: 300px;
     margin: auto;
-    background:#eee;
+    background:#fff;
     text-align: center;
     border-radius: 4px;
     padding-bottom: 15px;
-    font-family: 'Ubuntu'
+    font-family: 'Ubuntu';
+    border: 1px solid #eee;
+    
 }
 .title{
     color: #000;
@@ -81,7 +130,7 @@ button{
     color: white;
     background-color: darkorange;
     cursor: pointer;
-    width: 70%;
+    width: 20%;
     border-radius: 20px;
     font-size: 18px;
     text-align: center;
@@ -103,7 +152,17 @@ ul li{
     list-style: none;
     display: inline-block;
 }
+.section-3{
+    margin-top: 5%;
+    background-color: #eee;
 
+}
+.section-3 i{
+    color: darkorange;
+}
+.section-3 p{
+    color: rgba(0, 0, 0, 0.59);
+}
 /* FOOTER*/
 
 .social i{

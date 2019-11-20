@@ -37,10 +37,36 @@ body, html{
     color: white;
     background-color: darkorange;
 }
+/*DROPDOWN*/
+
+
+ul{ 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.links li{
+    background-color: #eee;
+    height: 40px;
+    text-align: center;
+    display: none;
+}
+.links li:hover{
+    background-color: darkorange;
+}
+.links li a{
+    text-decoration: none;
+    color: #000;
+}
+ul li:hover ul li{
+    display: block;
+}
+
 .site-content{
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/F.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/A.jpg');
     background-attachment: fixed;
     background-size: cover;
+    height: 560px;
 
 }
 .site-title, .site-desc{
@@ -49,34 +75,78 @@ body, html{
 
 }
 .site-title{
-    margin-top: 30%;
+    margin-top: 75%;
     margin-bottom: 6%;
-    font-size: 50px;
+    font-size: 60px;
 }
 .site-desc{
     font-size: 14px;
     padding-left: 15%;
 
 }
-.site-btn1{
-    margin-left: 40%;
-    background-color: darkorange;
-    color: white;
-}
+
 .main{
-    margin: 0;
-    padding: 0;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    padding-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     font-family: 'Ubuntu';
+    background-color: #eee;
 }
 .para1{
     padding: 5vw;
+    margin-top: -60px;
+    text-align: center;
 }   
 .para1 h1{
     margin: 0;
     padding: 0;
-    font-size:6vw;
+    font-size:4vw;
+}
+ /*footer*/
+
+ .social i{
+    color: darkorange;
+    font-size: 20px;
+}
+@media screen and(max-width: 768px){
+    .section-1 .card{
+        width: 14rem;
+    }
+    .section-4 .col-md-7 img{
+        width: 350px;
+    }
+
+}
+@media screen and(max-width: 320px){
+    .site-content .site-title{
+        font-size: 30px;
+        padding-left: 15%;
+    }
+    .site-content .site-btn2{
+        display: none;
+    }
+    .site-content .site-btn1{
+        margin-left: 15%;
+    }
+    .section-1 .heading-1 , .section-1 .heading-2{
+        font-size: 25px;
+    }
+    .section-1 .col-md-4{
+        padding: 5%;
+        margin-left: 8%;
+    }
+    .section-1 .card{
+        width: 15rem;
+    }
+    .section-4 .col-md-5{
+        padding: 0% 15%;
+    }
+    footer input[type="button"]{
+        margin-top: 5%;
+    }
+
 }

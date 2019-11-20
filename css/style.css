@@ -38,6 +38,29 @@ body, html{
     color: white;
     background-color: darkorange;
 }
+/*dropdown*/
+
+ul{ 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.links li{
+    background-color: #eee;
+    height: 40px;
+    text-align: center;
+    display: none;
+}
+.links li:hover{
+    background-color: darkorange;
+}
+.links li a{
+    text-decoration: none;
+    color: #000;
+}
+ul li:hover ul li{
+    display: block;
+}
 .site-content{
     background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/F.jpg');
     background-attachment: fixed;

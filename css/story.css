@@ -25,6 +25,28 @@ body,html{
 .active .nav-link{
     color: darkorange !important;
 }
+
+ul{ 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.links li{
+    background-color: #eee;
+    height: 40px;
+    text-align: center;
+    display: none;
+}
+.links li:hover{
+    background-color: darkorange;
+}
+.links li a{
+    text-decoration: none;
+    color: #000;
+}
+ul li:hover ul li{
+    display: block;
+}
 .menu-right-btn{
     padding: 13px 46px;
     margin-right: 4%;
