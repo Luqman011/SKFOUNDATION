@@ -7,16 +7,8 @@ body, html{
     min-height: 100vh; 
     font-family: 'Lato';
     scroll-behavior: smooth;
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('../images/N.jpg');
-    background-attachment: fixed;
-    background-size: cover;
 
 }
-header nav{
-    background-color: #fff;
-    color: #000;
-}
-
 .navbar-brand{
     font-family: 'Pacifico';
     font-size: 35px;
@@ -69,56 +61,92 @@ ul{
 ul li:hover ul li{
     display: block;
 }
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background: #eee;
+    margin: 20px;
+}
+.container .imgBx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
 
-.box{
-    width: 450px;
-    background: #ccc;
+}
+.container .imgBx img{
+    position: relative;
+    width: 700px;
+    
+}
+.container .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
     padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    color: #000;
-    font-family: 'Ubuntu'
 }
-.box-img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+.container .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #444;
 }
-.box h1{
-    font-size: 40px;
-    letter-spacing: 4px;
-    font-weight: 100
+.container .details p{
+    max-width: 85%;
+    margin-left: 15%;
+    color: #333;
+    font-size: 15px;
 }
-.box h5{
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 100;
+.container .details button{
+    background: darkorange;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 9px;
+    float: right;
 }
-.box p{
-    text-align: justify;
-}
-@media(max-width: 590px){
-    .box{
-        width: 80%;
+@media(max-width: 1080px){
+    .container{
         height: auto;
     }
-    .box-img{
-        width: 80%;
-        height: 180px;
+    .container .imgBx{
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
     }
-    .box h1{
-        font-size: 40px;
-        padding-top: 10px;
+    .container .imgBx img{
+        left: initial;
+        max-width: 100%;
     }
-    .box h5{
-        font-size: 30px;
+    .details{
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+
     }
-}
-/* footer*/
-footer{
-    background-color: #fff;
-    color: #000;
+    .container .details p{ 
+        max-width: 100%;
+        margin-left: 0;
+    }
 }
 .social i{
     color: darkorange;

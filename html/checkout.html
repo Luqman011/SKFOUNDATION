@@ -42,8 +42,8 @@
                             <a href="#" class="nav-link">Our Work</a>
                            <ul class="links">
                                <li><a href="../html/approach.html">What We Do</a></li>
-                               <li><a href="#">Our Projects</a></li>
-                               <li><a href="../html/story.html">Stories</a></li>
+                               <li><a href="../html/projects.html">Our Projects</a></li>
+                             
                            </ul>
                     </li>
                     <li class="nav-item">
@@ -64,34 +64,11 @@
 <h2> GET INVOLVED</h2>
 <p style="margin-left: 80px; font-size: 29px; color: darkorange;"> Please select the amount you wish to donate</p>
 <div class="parent">
-        <div class="child bak">50$</div>
-        <div class="child">100$</div>
-    </div>
-    <script>
-        var elements = document.getElementsByClassName("child");
-        for(var i = 0; i < elements.length; i++)
-        {
-            elements[i].onclick = function() {
-    
-                // remove class from sibling
-    
-                var el = elements[0];
-                while(el)
-                {
-                    if(el.tagName === "DIV"){
-                        el.classList.remove("bak");
-                    }
-                    // pass to new sibling
-                    
-                    el = el.nextSibling;
-                } 
-                this.classList.add("bak");
-            };
-        }
-    
-    
-    </script>
-    
+    <input type="radio" name="rad1">50$
+    <input type="radio" name="rad1">75$
+    <input type="radio" name="rad1">100$
+    <input type="radio" name="rad1"><label>Suprise Us</label><input type="text">
+</div>
 
 <div class="row">
     <div class="col-75">
@@ -168,28 +145,12 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer id="footer">
         <div class="section-5 text-center">
             <h4 style="margin-top:5%;">SHIFRA KIRABO FOUNDATION</h4>
             <h4 class="my-4">If you need any help</h4>
+            <p>Reach us at tel:<span style="font-size:20px; color:darkcyan; padding-right: 5px;">(443-600-5887)</span>Email:<span style="font-size:20px; color:darkcyan;">shifrakirabofoundation@gmail.com </p>
+        
 
             <div class="form-inline justify-content-center">
                 <input type="text" name="Email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
