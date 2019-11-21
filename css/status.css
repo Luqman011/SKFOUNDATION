@@ -7,8 +7,16 @@ body, html{
     min-height: 100vh; 
     font-family: 'Lato';
     scroll-behavior: smooth;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('../images/N.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 
 }
+header nav{
+    background-color: #fff;
+    color: #000;
+}
+
 .navbar-brand{
     font-family: 'Pacifico';
     font-size: 35px;
@@ -62,116 +70,56 @@ ul li:hover ul li{
     display: block;
 }
 
-.site-content{
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/A.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    height: 570px;
-
-}
-.site-title, .site-desc{
-    color: #fff;
-    font-family: 'Righteous';
-
-}
-.site-title{
-    margin-top: 20%;
-    margin-bottom: 6%;
-    font-size: 60px;
+.box{
+    width: 450px;
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
     text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Ubuntu'
 }
-.site-desc{
-    font-size: 14px;
-    padding-left: 15%;
-
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
-.column{
-    width: 25%;
-    float: left;
-    padding: 0px 10px;
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100
 }
-.row{
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 20px;
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
-.row:after{
-    content:"";
-    display: table;
-    clear: both;
-    
+.box p{
+    text-align: justify;
 }
-@media screen and (max-width: 768px){
-    .column{
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
+@media(max-width: 590px){
+    .box{
+        width: 80%;
+        height: auto;
+    }
+    .box-img{
+        width: 80%;
+        height: 180px;
+    }
+    .box h1{
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    .box h5{
+        font-size: 30px;
     }
 }
-.card{
-    max-width: 300px;
-    margin: auto;
-    background:#fff;
-    text-align: center;
-    border-radius: 4px;
-    padding-bottom: 15px;
-    font-family: 'Ubuntu';
-    border: 1px solid #eee;
-    
-}
-.title{
-    color: #000;
-    font-size: 18px;
-}
-.title .bio{
-    text-decoration: none;
+/* footer*/
+footer{
+    background-color: #fff;
     color: #000;
 }
-.title .bio:hover{
-    color: darkorange;
-}
-button{
-    border: none;
-    padding: 8px;
-    display: inline-block;
-    color: white;
-    background-color: darkorange;
-    cursor: pointer;
-    width: 40%;
-    border-radius: 20px;
-    font-size: 18px;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    font-size: 22px;
-    color: darkorange;
-    position: relative;
-}
-.col .card img{
-    text-align: center;
-    float: right;
-}
-a:hover,button:hover{
-    opacity: 0.6;
-}
-ul li{
-    list-style: none;
-    display: inline-block;
-}
-.section-3{
-    margin-top: 5%;
-    background-color: #eee;
-
-}
-.section-3 i{
-    color: darkorange;
-}
-.section-3 p{
-    color: rgba(0, 0, 0, 0.59);
-}
-/* FOOTER*/
-
 .social i{
     color: darkorange;
     font-size: 20px;
