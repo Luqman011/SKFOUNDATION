@@ -1,13 +1,74 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Ubuntu';
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto|Ubuntu&display=swap');
+
+
+body, html{
+    padding: 0%;
+    margin: 0%;
+    min-height: 100vh; 
+    font-family: 'Lato';
+    scroll-behavior: smooth;
+
 }
+.navbar-brand{
+    font-family: 'Pacifico';
+    font-size: 35px;
+    color: lightcoral !important; 
+}
+.nav-link{
+    font-size: 16px;
+    margin: 15px;
+    color: black !important;
+    font-family: 'Roboto';
+}
+.nav-link:hover{
+    color: darkorange !important;
+}
+.active .nav-link{
+    color: darkorange !important;
+}
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+
+}
+.menu-right-btn:hover{
+    color: white;
+    background-color: darkorange;
+}
+/*DROPDOWN*/
+
+
+ul{ 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.links li{
+    background-color: #eee;
+    height: 40px;
+    text-align: center;
+    display: none;
+}
+.links li:hover{
+    background-color: darkorange;
+}
+.links li a{
+    text-decoration: none;
+    color: #000;
+}
+ul li:hover ul li{
+    display: block;
+}
+
 section{
     width: 100%;
     height: 100vh;
     background: url('../images/M.jpg');
     background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu';
 }
 section .leftBox{
     width: 50%;
@@ -20,7 +81,7 @@ section .leftBox .content{
     color: #fff;
     background: rgba(0,0,0,0.5);
     padding: 40px;
-    transition: 5s;
+    transition: 3s;
 }
 section .leftBox .content:hover{
     background: darkorange;
@@ -56,7 +117,7 @@ section .events ul li{
     background: #fff;
     box-sizing: border-box;
     height: 200px;
-    /*margin: 15px 0; */
+    margin: 15px 0; 
 }
 section .events ul li .time{
    position: relative;
@@ -107,14 +168,122 @@ section .events ul li .details p{
     padding: 0;
     font-size: 16 px;
 }
-section .events ul li .details a{
-   display: block;
+section .events ul li .details .view{
+   display: inline-block;
    text-decoration: none;
    color: #000;
    text-transform:  uppercase;
    padding: 10px 15px;
    border: 2px solid darkorange;
-   margin-top: 15px;
-   font-size: 18px;
+   margin-bottom: 10px;
+   font-size: 15px;
    transition: .5s;
+
+   
+}
+section .events ul li .details a:hover{
+    background: darkorange;
+}
+
+@media(max-width: 991px){
+    section{
+        height: 100%;
+        background-position: center;
+    }
+    section .leftBox{
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    section .events{
+        
+        width: 100%;
+        height: auto;
+        background: transparent;
+        float: none;
+
+    }
+    section .leftBox .content{
+        padding: 20px;
+    }
+    section .leftBox .content h1{
+        font-size: 30px;
+    }
+
+
+    section .events ul{
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .events ul li{
+        height: auto;
+        background: rgba(255,255,255,.9);
+    }
+    section .events ul li .time{
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+    section .events ul li .time h2{
+        font-size: 30px;
+        line-height: 24px;
+    }
+    section .events ul li .time h2 span{
+        font-size: 15px;
+    }
+    section .events ul li .details{
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+    section .events ul li .details a{
+        padding: 5px 10px;
+    }
+}
+
+/*footer*/
+.social i{
+    color: darkorange;
+    font-size: 20px;
+}
+@media screen and(max-width: 768px){
+    .section-1 .card{
+        width: 14rem;
+    }
+    .section-4 .col-md-7 img{
+        width: 350px;
+    }
+
+}
+@media screen and(max-width: 320px){
+    .site-content .site-title{
+        font-size: 30px;
+        padding-left: 15%;
+    }
+    .site-content .site-btn2{
+        display: none;
+    }
+    .site-content .site-btn1{
+        margin-left: 15%;
+    }
+    .section-1 .heading-1 , .section-1 .heading-2{
+        font-size: 25px;
+    }
+    .section-1 .col-md-4{
+        padding: 5%;
+        margin-left: 8%;
+    }
+    .section-1 .card{
+        width: 15rem;
+    }
+    .section-4 .col-md-5{
+        padding: 0% 15%;
+    }
+    footer input[type="button"]{
+        margin-top: 5%;
+    }
+
 }
