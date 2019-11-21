@@ -163,6 +163,23 @@ label{
 .btn1:hover{
     background-color: darkorange; 
 }
+@media(max-width: 760px){
+    .parent{
+        width: 100%;
+        display: inline-block;
+
+    }
+    .parent input[type=text],input[type=radio]{
+        display: inline-block;
+        position: relative;;
+        margin-right: 40px;
+        padding: 20px 0;    }
+        .parent  .input input[type=text]{
+            width: 50%;
+            position: relative;
+        }
+
+}
 /*END OF CHECKOUT CSS*/
 
 .social i{
